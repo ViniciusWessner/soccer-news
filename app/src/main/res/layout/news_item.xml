@@ -18,6 +18,7 @@
             android:layout_height="@dimen/news_image_heigth"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:src = "@color/teal_200"
             app:layout_constraintTop_toTopOf="parent"
             tools:srcCompat="@tools:sample/avatars"
             android:contentDescription="@string/cd_news_image" />
@@ -72,7 +73,12 @@
             app:layout_constraintTop_toTopOf="@+id/btOpenLink"
             app:layout_constraintVertical_bias="0.625"
             app:srcCompat="@drawable/ic_favorite"
-            android:contentDescription="@string/cd_favorite_icon" />
+            android:contentDescription="@string/cd_favorite_icon"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            />
 
         <ImageView
             android:id="@+id/ivShare"
@@ -86,6 +92,11 @@
             app:layout_constraintTop_toTopOf="@+id/ivFavorite"
             app:srcCompat="@drawable/ic_share"
             android:contentDescription="@string/cd_share_icon"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            />
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
